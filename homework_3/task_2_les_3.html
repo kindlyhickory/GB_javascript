@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+
+	function countBasketPrice(bask){
+		var total = 0;
+		for(var product in bask){
+			console.log(total);
+			total += bask[product]['price'];
+		}
+		return total;
+	}
+	
+	var count_of_products = +prompt("Укажите количество товаров: ")
+	var basket = [];
+	for(var i = 1; i <= count_of_products; i++){
+		basket.push({name:prompt("Укажите название товара"), price: +prompt('Укажите цену товара: ')})
+	}
+	
+
+
+	for(var i in basket){
+		console.log(basket[i]['price'])
+	}
+
+	console.log(countBasketPrice(basket));
+
+</script>
