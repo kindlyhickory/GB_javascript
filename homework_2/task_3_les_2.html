@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+	
+	var a = (Math.floor(Math.random() * (15 - 0 + 1)) + 0) * ((Math.random() < 0.5) ? -1 : 1);
+	var b = (Math.floor(Math.random() * (15 - 0 + 1)) + 0) * ((Math.random() < 0.5) ? -1 : 1);
+
+	alert("a = "+ a +", b = " + b);
+
+	if(a >= 0 && b >= 0){
+		alert(a-b);
+	}
+	else if(a < 0 && b < 0){
+		alert(a*b);
+	}
+	else if((a<0 && b >= 0) ||(a>=0 && b<0)){
+		alert(a+b);
+	}
+
+</script>
