@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+	var primes = [2];
+	var n = 3;
+	var i;
+	var count;
+	while(n < 100){
+		i = 2;
+		count = 0;
+		while (i < n){
+			if(n % i == 0){
+				count +=1
+			}
+			i++
+		}
+		if(count == 0){
+			primes.push(n)
+		}
+		n++
+	}
+	document.write(primes);
+</script>							
