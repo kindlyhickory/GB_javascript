@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+            function get_digit(digit) {
+                let object = {};
+                if (!Number.isInteger(digit) || digit > 999 || digit < 0){
+                    console.log('Введено неправильное значение')
+                }
+                else{
+                    object.units = digit % 10;
+                    object.tens = Math.floor((digit % 100) / 10);
+                    object.hundreds = Math.floor(digit / 100);
+                }
+                return object
+            }    
+            let dig = +prompt('Введите число от 0 до 999: ')
+
+            console.log(get_digit(dig));
+             
+
+    </script>
+</body>
+</html>
