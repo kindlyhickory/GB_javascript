@@ -1,0 +1,19 @@
+.hidden {
+    display:none;
+}
+
+.window {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    width: 400px;
+    background-color: cornsilk;
+    font-size: 40px;
+    outline: 1px solid;
+    box-shadow: 0 0 15px black;
+}
+
+.close{
+    position: relative;
+    
+}
